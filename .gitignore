@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+*.sln
+UCShWebApplication1/Dockerfile
+*.json
+*.csproj
+*.http
