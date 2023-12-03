@@ -367,3 +367,5 @@ UCShWebApplication1/Dockerfile
 *.csproj
 *.http
 *.db
+*.db-shm
+*.db-wal
