@@ -366,3 +366,4 @@ UCShWebApplication1/Dockerfile
 *.json
 *.csproj
 *.http
+*.db
