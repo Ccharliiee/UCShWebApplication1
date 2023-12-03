@@ -16,15 +16,15 @@ namespace UCShWebApplication1.Controllers
         }
 
         [HttpGet(Name = "GetProducts")]
-        public ActionResult<List<Product>> GetProducts()
+        public async Task<ActionResult<List<Product>>> GetProductsAsync()
         {
-            return  _vproStoreContext.Products.ToList();
+            return await _vproStoreContext.Products.ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Product?> GetProduct(int id)
+        public async Task<ActionResult<Product?>> GetProductAsync(int id)
         {
-            return _vproStoreContext.Products.Find(id);
+            return await _vproStoreContext.Products.FindAsync(id);
         }
     }
 }
